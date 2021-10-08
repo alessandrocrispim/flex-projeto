@@ -1,0 +1,420 @@
+/* Gerais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+      
+}
+
+div img {
+    display: block;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;  
+}
+
+.btn {
+    background-color: #122a57;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Menu*/
+
+header {
+    background-color: #122a57;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    z-index: 9;
+}
+
+header .list-itens {
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-itens li a {
+    color: #fff;
+}
+
+header .menu {
+    justify-content: space-between;
+   
+}
+
+/* Apresentação*/
+
+.apresentacao {
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+
+.apresentacao .texto-apresentacao {
+    min-height: 200px;
+    
+}
+
+.texto-apresentacao h1 {
+    color: #122a57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.texto-apresentacao p {
+    padding-bottom: 10px;
+}
+
+
+/* Quem somos*/
+
+#quem-somos {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    height: 700px;
+}
+
+#quem-somos h2 {
+    font-size: 32px;
+    color: #122a57;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#quem-somos h2::before {
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 10px;
+    margin-left: 20px;
+    background-color: #122a57;
+    position: relative;
+    
+}
+
+#quem-somos p {
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 20px;
+}
+
+#quem-somos img {
+    min-width: 420px;
+}
+
+.container-externo {
+    background-color: #122a57;
+    width: 100%;
+    
+}
+
+/* Serviços*/
+
+#servicos {
+    
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    height: 700px;
+    margin-top: 60px;
+}
+
+#servicos h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.list-servicos  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-servicos .item-servico {
+    text-align: center;
+}
+
+.item-servico a {
+    width: 220px;
+    background-color: #fff;
+    border-radius: 50px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 50px;
+    padding: 5px 10px;
+    color: #122a57;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+.item-servico p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+
+}
+
+.item-servico img {
+    width: 80%;
+    margin: auto;
+
+}
+
+
+
+/* Planos*/
+
+#planos {
+    flex-direction: column;
+    height: 100vh;
+    height: 700px;
+    padding-top: 50px;
+
+   
+
+}
+
+#planos h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+.list-planos {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.item-plano {
+    flex: 1;
+    border: 5px solid #122a57;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 260px;
+    line-height: 30px;
+    
+}
+
+.item-plano .btn {
+    margin: auto;
+    margin-bottom: 20px;    
+}
+
+.item-plano h3 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item-plano h3::after {
+    content: "";
+    background-color: #122a57;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 10px;
+}
+
+.item-plano ul {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item-plano ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+
+.item-plano ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122a57;
+    margin-right: 5px;
+
+}
+
+/*Footer*/
+
+footer {
+    background-color: #122a57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer {
+    justify-content: space-between;
+    
+    color: #fff;
+}
+
+/* Mobile */
+
+@media (max-width: 920px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .menu {
+        padding: 0 0 10px 20px;
+        
+    }
+    .list-itens {
+        margin-top: 10px;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 20px;
+        
+    }
+
+    .apresentacao .texto-apresentacao {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 20px 25px;  
+    }
+
+    .texto-apresentacao .btn {
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #quem-somos {
+        flex-direction: column-reverse;
+        margin: 10px 0 10px 15px;
+    }
+
+    #quem-somos img {
+        min-width: 320px;
+        margin: auto;
+    }
+
+    #servicos {
+        height: 100%;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    #servicos h2 {
+        padding: 20px;
+    }
+
+    .list-servicos {
+        flex-direction: column;
+    }
+
+    .item-servico img {
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #planos {
+        height: 100%;
+    }
+
+    .list-planos {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .list-planos .item-plano {
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #planos h2 {
+        padding: 20px;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    footer .footer {
+        align-items: center;  
+    }
+
+    .footer p {
+        padding: 10px;   
+    }
+}
+
+/* Fotos*/
+
+.foto1 {
+    
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.london {
+    background-image: url("images/london.jpg");
+}
+
+.berlin {
+    background-image: url("images/berlin.jpg");
+}
+
+.amsterdam {
+    background-image: url("images/amsterdam.jpg");
+}
+
+.madri {
+    background-image: url("images/madrid.jpg");
+}
+
+.paris {
+    background-image: url("images/paris.jpg");
+}
