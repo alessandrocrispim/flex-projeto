@@ -11,6 +11,7 @@
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
       
@@ -76,6 +77,8 @@ header .menu {
    
 }
 
+
+
 /* Apresentação*/
 
 .apresentacao {
@@ -96,7 +99,10 @@ header .menu {
 }
 .texto-apresentacao p {
     padding-bottom: 10px;
+    
 }
+
+
 
 
 /* Quem somos*/
@@ -440,8 +446,8 @@ footer .footer {
    
 }
 
-.js .fadeInDown {
-    transform: translate3d(0, -40px, 0);
+.js .fadeInLeft {
+    transform: translate3d(-20px, 0, 0);
 }
 
 .js .anime {
