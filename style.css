@@ -450,6 +450,8 @@ footer .footer {
    
 }
 
+/* Animação*/
+
 .img img {
     width: 600px;
     position: absolute;
@@ -472,15 +474,17 @@ footer .footer {
 
 @keyframes fly {
    0% {
-       transform: translateY(30px) translateX(-40px);
-       
+       transform: translateY(-30px) translateX(-80px);   
    }
+
+
    100% {
     transform: translateY(-80px) translateX(40px);
     opacity: 0.6;
-    filter: drop-shadow(10px, 10px, 10px rgba(0,0,0,.6));
    }
 }
+
+/* fotos*/
 
 .london {
     background-image: url("images/london.jpg");
@@ -501,6 +505,8 @@ footer .footer {
 .paris {
     background-image: url("images/paris.jpg");
 }
+
+/* javascript */ 
 
 .js [data-anime] {
     opacity: 0;
