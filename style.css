@@ -449,13 +449,35 @@ footer .footer {
     left: 20px;
    
 }
+
 .img img {
-   
     width: 600px;
     position: absolute;
     top: 210px;
     right: -60px;
+    opacity: 0;
+    animation: fly 2s linear 1s forwards;
+    
+    /*
+    animation-name: fly;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    */
+}
+
+@keyframes fly {
+   0% {
+       transform: translateY(30px) translateX(-40px);
+       
+   }
+   100% {
+    transform: translateY(-80px) translateX(40px);
     opacity: 0.6;
+   }
 }
 
 .london {
@@ -489,13 +511,13 @@ footer .footer {
 }
 
 .js .fadeInDown {
-    transform: translate3d( 0, -20px, 0);
+    transform: translate3d( 0, -40px, 0);
 }
 
 .js .anime {
     opacity: 1;
     transform: none;
-    transition: opacity 800ms, transform 800ms;
+    transition: opacity 900ms, transform 900ms;
 }
 
 
