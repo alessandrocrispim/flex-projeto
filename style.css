@@ -17,11 +17,7 @@ a {
       
 }
 
-div img {
-    display: block;
-    width: 100%;
-    
-}
+
 
 .flex-container {
     display: flex;
@@ -47,6 +43,7 @@ div img {
 a:hover {
     text-decoration: underline;
 }
+
 
 /* Menu*/
 
@@ -77,40 +74,40 @@ header .menu {
    
 }
 
+/* Apresentaçâo*/
+
 .foto2 {
     display: flex;
     flex-wrap: nowrap;
    overflow: hidden;
+   width: 992px;
+   margin: auto;
+   align-items: center;
+   justify-content: space-between;
+   
 }
 
 .foto2 h1 {
-   
+    height: 300px;
+    align-items: center;
     color: white;
     font-size: 48px;
-    line-height: 70px;
-    
-    width: 540px;
+    line-height: 90px;
     padding: 20px;
-
-
-}
-
-.foto2 img {
-    
-    width: 60%;
-    height: 60%;
-    padding: 10px;
-    margin-right: 20px;
-    opacity: 0.1;
+    margin-left: 10px;
     
 }
 
 
 
-/* Apresentação*/
+
+
+
+/* Saiba mais*/
 
 .apresentacao {
-    height: 100vh;
+    
+    height: 700px;
     align-items: center;
     justify-content: space-between;
 }
@@ -336,6 +333,10 @@ footer .footer {
     .flex-container {
         flex-direction: column;
     }
+   
+    .img img {
+        display: none;
+    }
 
     .menu {
         padding: 0 0 10px 20px;
@@ -447,6 +448,14 @@ footer .footer {
     bottom: 20px;
     left: 20px;
    
+}
+.img img {
+   
+    width: 600px;
+    position: absolute;
+    top: 210px;
+    right: -60px;
+    opacity: 0.6;
 }
 
 .london {
