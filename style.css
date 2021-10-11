@@ -456,7 +456,8 @@ footer .footer {
     top: 210px;
     right: -60px;
     opacity: 0;
-    animation: fly 2s linear 1s forwards;
+    animation: fly 1s linear 0.9s forwards;
+    
     
     /*
     animation-name: fly;
@@ -477,6 +478,7 @@ footer .footer {
    100% {
     transform: translateY(-80px) translateX(40px);
     opacity: 0.6;
+    filter: drop-shadow(10px, 10px, 10px rgba(0,0,0,.6));
    }
 }
 
@@ -505,13 +507,9 @@ footer .footer {
    
 }
 
-.js .fadeInUp {
-    transform: translate3d( 0, 30px, 0);
-    
-}
 
 .js .fadeInDown {
-    transform: translate3d( 0, -40px, 0);
+    transform: translate3d( 0, -60px, 0);
 }
 
 .js .anime {
